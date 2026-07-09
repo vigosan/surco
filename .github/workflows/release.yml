@@ -96,7 +96,7 @@ jobs:
       # OS + arch because the binary differs per platform. GitHub stores this automatically; no
       # manual upload. On a miss it just downloads as before.
       - name: Cache Electron binary
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             ~/Library/Caches/electron
