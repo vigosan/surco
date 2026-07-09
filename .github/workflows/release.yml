@@ -141,7 +141,7 @@ jobs:
       # update feed. Stash each arch's copy so a later job can merge them.
       - name: Stash the per-arch update feed
         if: runner.os == 'macOS'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: latest-mac-${{ matrix.os }}
           path: apps/desktop/dist/latest-mac.yml
