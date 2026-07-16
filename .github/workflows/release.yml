@@ -16,7 +16,7 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
@@ -103,7 +103,7 @@ jobs:
         os: [macos-14, macos-15-intel, windows-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
@@ -367,7 +367,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       - name: Check out the tap
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: surco-app/homebrew-surco
           # Dedicated deploy key, write-scoped to homebrew-surco only, so the push
